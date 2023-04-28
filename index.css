@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn&display=swap');
+
+:root {
+    --bg-color: #282828;
+    --fg-color: #ebdbb2;
+    --heading: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    padding: 24px;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading);
+    font-size: 3em;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.calculator {
+    height: 100%;
+    width: 30%;
+    background-color: #504945;
+    -webkit-box-shadow: 6px 7px 37px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 7px 37px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 7px 37px -22px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 36px;
+}
+
+.display {
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+    height: 112px;
+    width: 100%;
+    -webkit-box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+
+.autograph {
+    font-family: var(--heading);
+    font-size: 1.5em;
+    align-self: flex-end;
+    padding: 4px;
+    text-align: right;
+}
+
+.autograph a {
+    font-family: 'Gwendolyn', cursive;
+    text-decoration: none;
+}
+.autograph a:visited {
+    color: var(--fg-color);    
+    text-decoration: none;
+}
+
+.autograph a:link {
+    color: var(--fg-color);        
+    text-decoration: none;
+}
