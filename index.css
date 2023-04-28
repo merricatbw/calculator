@@ -71,3 +71,31 @@ h1 {
     color: var(--fg-color);        
     text-decoration: none;
 }
+
+.keypad {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.operations {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.functions {
+    display:flex;
+}
+
+.btn {
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+}
+
