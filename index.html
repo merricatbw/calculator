@@ -23,7 +23,7 @@
             <div class="keypad">
                 <button class="btn function" style="grid-area: ac;" onclick="ac()">C</button>
                 <button class="btn function" style="grid-area: percent;" onclick="percent()">%</button>
-                <button class="btn function" style="grid-area: pm;">±</button>
+                <button class="btn function" style="grid-area: pm;" onclick="pm()">±</button>
                 <button class="btn operation" style="grid-area: multi;" onclick="appendToCurrent('muli')">×</button>
                 <button class="btn" style="grid-area: seven;" onclick="appendToDisplay(7)">7</button>
                 <button class="btn" style="grid-area: eight;" onclick="appendToDisplay(8)">8</button>
@@ -38,7 +38,7 @@
                 <button class="btn" style="grid-area: three;" onclick="appendToDisplay(3)">3</button>
                 <button class="btn operation" style="grid-area: sub;" onclick="appendToCurrent('subi')">−</button>
                 <button class="btn" style="grid-area: zero;" onclick="appendToDisplay(0)">0</button>
-                <button class="btn" style="grid-area: point;">.</button>
+                <button class="btn" style="grid-area: point;" onclick="appendToDisplay('.')">.</button>
                 <button class="btn operation" style="grid-area: eq;" onclick="appendToCurrent('eq')">=</button>
             </div>
         </div>

@@ -23,6 +23,10 @@ const percent = () => {
     display.innerText = (Number(display.innerText) / 100).toString()
 }
 
+const pm = () => {
+    display.innerText = (Number(display.innerText) * -1).toString()
+}
+
 
 const appendToCurrent = operation => {
     if (current.length < 2) {
