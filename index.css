@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn&family=Nova+Mono&display=swap');
 
 :root {
     --bg-color: #282828;
     --fg-color: #ebdbb2;
     --heading: 'Bebas Neue', cursive;
+    --display: 'Nova Mono', monospace;
 }
 
 body {
@@ -47,7 +48,13 @@ h1 {
     -webkit-box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
     box-shadow: inset 4px 4px 18px -6px rgba(0, 0, 0, 0.75);
+    font-family: var(--display);
     border-radius: 4px;
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 12px;
 }
 
 .autograph {
@@ -86,8 +93,36 @@ h1 {
 
 
 .btn {
+    background-color: var(--fg-color);
     border-radius: 4px;
     margin: 5px;
+    border-width: 0px;
+    font-family: var(--heading);
+    font-size: 2em;
+    color: var(--bg-color);
 }
 
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #d5c4a1;
+}
+
+.operation {
+    background-color:  #fabd2f;
+}
+
+.operation:active {
+    background-color: #d79921;
+}
+
+.function {
+    background-color: #a89984;
+}
+
+.function:active {
+    background-color: #928374;
+}
 
