@@ -41,7 +41,7 @@ const appendToCurrent = operation => {
 
             }
             case "subi": {
-                current[0] = current[0] / current[2];
+                current[0] = current[0] - current[2];
                 break;
             }
             case "eq": {
@@ -60,7 +60,7 @@ const appendToCurrent = operation => {
         
                     }
                     case "subi": {
-                        display.innerText = current[0] / current[2];
+                        display.innerText = current[0] - current[2];
                         break;
                     }
                 }
