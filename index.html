@@ -15,31 +15,31 @@
     <div class="container">
         <div class="calculator">
             <div class="display" id="display">
-                <span id="display-text">3.14</span>
+                <span id="display-text"></span>
             </div>
             <div class="autograph">
                 <a href="https://www.github.com/merricatbw">Merricat</a>
             </div>
             <div class="keypad">
-                <button class="btn function" style="grid-area: ac;" onclick="cls()">C</button>
+                <button class="btn function" style="grid-area: ac;" onclick="ac()">C</button>
                 <button class="btn function" style="grid-area: percent;">%</button>
                 <button class="btn function" style="grid-area: pm;">±</button>
-                <button class="btn operation" style="grid-area: multi;">×</button>
+                <button class="btn operation" style="grid-area: multi;" onclick="appendToCurrent('muli')">×</button>
                 <button class="btn" style="grid-area: seven;" onclick="appendToDisplay(7)">7</button>
                 <button class="btn" style="grid-area: eight;" onclick="appendToDisplay(8)">8</button>
                 <button class="btn" style="grid-area: nine; " onclick="appendToDisplay(9)">9</button>                            
-                <button class="btn operation" style="grid-area: plus;">+</button>
+                <button class="btn operation" style="grid-area: plus;" onclick="appendToCurrent('addi')">+</button>
                 <button class="btn" style="grid-area: four;" onclick="appendToDisplay(4)">4</button>
                 <button class="btn" style="grid-area: five;" onclick="appendToDisplay(5)">5</button>
                 <button class="btn" style="grid-area: six;" onclick="appendToDisplay(6)">6</button>
-                <button class="btn operation" style="grid-area: divi;">÷</button>
+                <button class="btn operation" style="grid-area: divi;" onclick="appendToCurrent('divi')">÷</button>
                 <button class="btn" style="grid-area: one;" onclick="appendToDisplay(1)">1</button>
                 <button class="btn" style="grid-area: two;" onclick="appendToDisplay(2)">2</button>
                 <button class="btn" style="grid-area: three;" onclick="appendToDisplay(3)">3</button>
-                <button class="btn operation" style="grid-area: sub;">−</button>
+                <button class="btn operation" style="grid-area: sub;" onclick="appendToCurrent('subi')">−</button>
                 <button class="btn" style="grid-area: zero;" onclick="appendToDisplay(0)">0</button>
                 <button class="btn" style="grid-area: point;">.</button>
-                <button class="btn operation" style="grid-area: eq;">=</button>
+                <button class="btn operation" style="grid-area: eq;" onclick="appendToCurrent('eq')">=</button>
             </div>
         </div>
     </div>
