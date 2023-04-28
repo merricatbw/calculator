@@ -19,6 +19,10 @@ const ac = () => {
     cls()
 }
 
+const percent = () => {
+    display.innerText = (Number(display.innerText) / 100).toString()
+}
+
 
 const appendToCurrent = operation => {
     if (current.length < 2) {
